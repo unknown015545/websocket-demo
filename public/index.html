@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message App</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
+</head>
+<body>
+    <div style="display: none;" id="interface">
+        <h1>Messages</h1>
+        <ul id="messages">
+
+        </ul>
+    <input type="text" id="message" placeholder="Message">
+    <button onclick="sendMessage()">Send</button>
+
+</div>
+<div id="login">
+    <h1>Login</h1>
+    <input type="text" placeholder="Username" id="username">
+    <input type="password" placeholder="Password" id="password">
+    <button onclick="signIn()">Log in</button>
+<a href="/register.html">Register for account</a>
+</div>
+</body>
+</html>
